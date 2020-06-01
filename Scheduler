@@ -1,0 +1,11 @@
+# For The Intervals
+from apscheduler.schedulers.blocking import BlockingScheduler
+
+def job function():
+    print("Hello World")
+sched = BlockingScheduler()
+
+#Schedule job function to be called every two hours
+sched.add_job(job_function, 'interval', hours*2)
+
+sched.start()
